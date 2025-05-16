@@ -37,7 +37,7 @@ export default function Home() {
         {/* Blue section with phone partially outside */}
         <div className="bg-blue-600 rounded-3xl px-4 py-5 relative">
           <div className="flex flex-row items-center">
-            <div className="text-white mr-4 w-3/5">
+            <div className="text-white mr-4 w-3/5 pl-2">
               <p className="text-xs sm:text-sm md:text-base lg:text-lg font-semibold mb-2">
                 Além desse benefício exclusivo, ao abrir sua conta você também aproveita diversas funcionalidades para
                 seu dia a dia, como:
@@ -45,7 +45,7 @@ export default function Home() {
             </div>
             <div className="w-2/5 flex justify-center">
               {/* Phone image positioned to appear partially outside the blue section */}
-              <div className="absolute -top-4 right-8 z-20">
+              <div className="absolute -top-4 right-8 sm:right-10 md:right-12 lg:right-16 z-20">
                 <Image
                   src="/images/celularcortado.png"
                   alt="Celular com app"
@@ -57,68 +57,48 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Features Grid - Reduced size */}
-          <div className="grid grid-cols-3 gap-2 sm:gap-3 md:gap-4 mt-6">
-            <div className="flex flex-col items-center text-white">
-              <div className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center mb-1">
-                <img src="/images/icons/24h.svg" alt="Banco 24 Horas" className="w-5 h-5 sm:w-6 sm:h-6" />
+          {/* Features Grid - 3 columns with horizontal layout and centered text */}
+          <div className="grid grid-cols-3 gap-x-1 gap-y-3 sm:gap-x-2 sm:gap-y-4 mt-6 pl-2">
+            <div className="flex items-center text-white">
+              <div className="w-7 h-7 sm:w-8 sm:h-8 flex-shrink-0 flex items-center justify-center mr-1">
+                <img src="/images/icons/24h.svg" alt="Banco 24 Horas" className="w-4 h-4 sm:w-5 sm:h-5" />
               </div>
-              <p className="text-center text-[10px] sm:text-xs">
-                Saque no
-                <br />
-                Banco24Horas
-              </p>
+              <p className="text-[9px] sm:text-[10px] leading-tight">Saque no Banco24Horas</p>
             </div>
 
-            <div className="flex flex-col items-center text-white">
-              <div className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center mb-1">
-                <img src="/images/icons/cartao.svg" alt="Cartão" className="w-5 h-5 sm:w-6 sm:h-6" />
+            <div className="flex items-center text-white">
+              <div className="w-7 h-7 sm:w-8 sm:h-8 flex-shrink-0 flex items-center justify-center mr-1">
+                <img src="/images/icons/cartao.svg" alt="Cartão" className="w-4 h-4 sm:w-5 sm:h-5" />
               </div>
-              <p className="text-center text-[10px] sm:text-xs">
-                Compras no
-                <br />
-                débito e crédito
-              </p>
+              <p className="text-[9px] sm:text-[10px] leading-tight">Compras no débito e crédito</p>
             </div>
 
-            <div className="flex flex-col items-center text-white">
-              <div className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center mb-1">
-                <img src="/images/icons/celular.svg" alt="Celular" className="w-5 h-5 sm:w-6 sm:h-6" />
+            <div className="flex items-center text-white">
+              <div className="w-7 h-7 sm:w-8 sm:h-8 flex-shrink-0 flex items-center justify-center mr-1">
+                <img src="/images/icons/celular.svg" alt="Celular" className="w-4 h-4 sm:w-5 sm:h-5" />
               </div>
-              <p className="text-center text-[10px] sm:text-xs">
-                Carteiras
-                <br />
-                Digitais
-              </p>
+              <p className="text-[9px] sm:text-[10px] leading-tight">Carteiras Digitais</p>
             </div>
 
-            <div className="flex flex-col items-center text-white">
-              <div className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center mb-1">
-                <img src="/images/icons/pix.svg" alt="Pix" className="w-5 h-5 sm:w-6 sm:h-6" />
+            <div className="flex items-center text-white">
+              <div className="w-7 h-7 sm:w-8 sm:h-8 flex-shrink-0 flex items-center justify-center mr-1">
+                <img src="/images/icons/pix.svg" alt="Pix" className="w-4 h-4 sm:w-5 sm:h-5" />
               </div>
-              <p className="text-center text-[10px] sm:text-xs">Pix</p>
+              <p className="text-[9px] sm:text-[10px] leading-tight">Pix</p>
             </div>
 
-            <div className="flex flex-col items-center text-white">
-              <div className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center mb-1">
-                <img src="/images/icons/barras.svg" alt="Calendário" className="w-5 h-5 sm:w-6 sm:h-6" />
+            <div className="flex items-center text-white">
+              <div className="w-7 h-7 sm:w-8 sm:h-8 flex-shrink-0 flex items-center justify-center mr-1">
+                <img src="/images/icons/barras.svg" alt="Calendário" className="w-4 h-4 sm:w-5 sm:h-5" />
               </div>
-              <p className="text-center text-[10px] sm:text-xs">
-                Pagamentos
-                <br />
-                de boletos
-              </p>
+              <p className="text-[9px] sm:text-[10px] leading-tight">Pagamentos de boletos</p>
             </div>
 
-            <div className="flex flex-col items-center text-white">
-              <div className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center mb-1">
-                <img src="/images/icons/LogoPorto.svg" alt="Barras" className="w-5 h-5 sm:w-6 sm:h-6" />
+            <div className="flex items-center text-white">
+              <div className="w-7 h-7 sm:w-8 sm:h-8 flex-shrink-0 flex items-center justify-center mr-1">
+                <img src="/images/icons/LogoPorto.svg" alt="Barras" className="w-4 h-4 sm:w-5 sm:h-5" />
               </div>
-              <p className="text-center text-[10px] sm:text-xs">
-                Gestão no
-                <br />
-                App Porto
-              </p>
+              <p className="text-[9px] sm:text-[10px] leading-tight">Gestão no App Porto</p>
             </div>
           </div>
         </div>
