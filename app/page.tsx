@@ -167,26 +167,25 @@ export default function Home() {
       <div className="max-w-3xl mx-auto px-4 flex justify-center gap-4 mb-8">
         <Link
           href="https://www.instagram.com/especseguros?igsh=MThiM3BzcnllN3EwdA=="
-          className="w-10 h-10 rounded-full border border-blue-400 flex items-center justify-center text-blue-400"
+          className="w-10 h-10 rounded-full border border-sky-400 flex items-center justify-center text-sky-400"
         >
           <Instagram className="w-5 h-5" />
         </Link>
         <Link
           href="https://www.facebook.com/share/1YqWwEJe7m/"
-          className="w-10 h-10 rounded-full border border-blue-400 flex items-center justify-center text-blue-400"
+          className="w-10 h-10 rounded-full border border-sky-400 flex items-center justify-center text-sky-400"
         >
           <Facebook className="w-5 h-5" />
         </Link>
         <Link
           href="https://wa.me/message/XBYD42MCYPZ7M1"
-          className="w-10 h-10 rounded-full border border-blue-400 flex items-center justify-center text-blue-400"
+          className="w-10 h-10 rounded-full border border-sky-400 flex items-center justify-center text-sky-400"
         >
-          <FaWhatsapp className="w-5 h-5 text-blue-400" />
-          WhatsApp
+          <FaWhatsapp className="w-5 h-5 text-sky-400" />
         </Link>
         <Link
           href="https://youtube.com/@especseguroseconsorcios?si=wNH6lnM6v6fmKDcj"
-          className="w-10 h-10 rounded-full border border-blue-400 flex items-center justify-center text-blue-400"
+          className="w-10 h-10 rounded-full border border-sky-400 flex items-center justify-center text-sky-400"
         >
           <Youtube className="w-5 h-5" />
         </Link>
