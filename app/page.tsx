@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Instagram, Facebook, Youtube, MessageCircle } from "lucide-react"
+import { Instagram, Facebook, Youtube} from "lucide-react"
 import { FaWhatsapp } from 'react-icons/fa';
 
 export default function Home() {
