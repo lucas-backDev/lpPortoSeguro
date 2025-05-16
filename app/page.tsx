@@ -189,7 +189,9 @@ export default function Home() {
           <Youtube className="w-5 h-5" />
         </Link>
 
-        {/* Disclaimer */}
+      </div>
+
+      {/* Disclaimer */}
         <div className="max-w-3xl mx-auto px-4 text-xs text-gray-500 mb-8">
           <p className="mb-1">A abertura da conta está sujeita a aprovação.</p>
           <p className="mb-1">
@@ -197,8 +199,6 @@ export default function Home() {
             ou roubo do celular ou cartão. O valor do celular em caso de roubo, não será coberto.
           </p>
         </div>
-        
-      </div>
 
     </main>
   )
