@@ -181,7 +181,7 @@ export default function Home() {
           href="https://wa.me/message/XBYD42MCYPZ7M1"
           className="w-10 h-10 rounded-full border border-blue-400 flex items-center justify-center text-blue-400"
         >
-          <FaWhatsapp className="w-6 h-6 mr-2 text-blue-400" />
+          <FaWhatsapp className="w-5 h-5 text-blue-400" />
           WhatsApp
         </Link>
         <Link
