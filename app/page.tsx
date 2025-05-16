@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Instagram, Facebook, Youtube, Phone } from "lucide-react"
+import { Instagram, Facebook, Youtube, MessageCircle } from "lucide-react"
 
 export default function Home() {
   return (
@@ -33,36 +33,36 @@ export default function Home() {
 
       {/* Benefits Section */}
       <div className="w-full bg-blue-600 rounded-3xl max-w-3xl mx-auto px-4 py-8 mb-8">
-        <div className="flex flex-col md:flex-row items-center">
-          <div className="text-white mb-6 md:mb-0 md:mr-4 md:w-3/5">
-            <p className="text-xl md:text-2xl font-semibold mb-4">
+        <div className="flex flex-row items-center">
+          <div className="text-white mr-4 w-3/5">
+            <p className="text-sm sm:text-base md:text-xl lg:text-2xl font-semibold mb-4">
               Além desse benefício exclusivo, ao abrir sua conta você também aproveita diversas funcionalidades para seu
               dia a dia, como:
             </p>
           </div>
-          <div className="md:w-2/5">
+          <div className="w-2/5 flex justify-center">
             <Image
               src="/images/celularcortado.png"
               alt="Celular com app"
               width={300}
               height={500}
-              className="mx-auto"
+              className="max-w-full h-auto max-h-[180px] sm:max-h-none"
             />
           </div>
         </div>
+      
 
         {/* Features Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-8">
+        <div className="grid grid-cols-3 gap-2 sm:gap-4 md:gap-6 mt-8">
           <div className="flex flex-col items-center text-white">
-            <div className="w-12 h-12 flex items-center justify-center mb-2">
-              <Image 
+            <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center mb-1 sm:mb-2">
+              <img 
                 src="/images/icons/24h.svg" 
                 alt="Banco 24 Horas" 
-                width={32} 
-                height={32} 
+                className="w-6 h-6 sm:w-8 sm:h-8"
               />
             </div>
-            <p className="text-center text-sm">
+            <p className="text-center text-xs sm:text-sm">
               Saque no
               <br />
               Banco24Horas
@@ -70,15 +70,14 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col items-center text-white">
-            <div className="w-12 h-12 flex items-center justify-center mb-2">
-              <Image 
+            <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center mb-1 sm:mb-2">
+              <img 
                 src="/images/icons/cartao.svg" 
                 alt="Cartão" 
-                width={32} 
-                height={32} 
+                className="w-6 h-6 sm:w-8 sm:h-8"
               />
             </div>
-            <p className="text-center text-sm">
+            <p className="text-center text-xs sm:text-sm">
               Compras no
               <br />
               débito e crédito
@@ -86,15 +85,14 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col items-center text-white">
-            <div className="w-12 h-12 flex items-center justify-center mb-2">
-              <Image 
+            <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center mb-1 sm:mb-2">
+              <img 
                 src="/images/icons/celular.svg" 
                 alt="Celular" 
-                width={32} 
-                height={32} 
+                className="w-6 h-6 sm:w-8 sm:h-8"
               />
             </div>
-            <p className="text-center text-sm">
+            <p className="text-center text-xs sm:text-sm">
               Carteiras
               <br />
               Digitais
@@ -102,27 +100,25 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col items-center text-white">
-            <div className="w-12 h-12 flex items-center justify-center mb-2">
-              <Image 
+            <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center mb-1 sm:mb-2">
+              <img 
                 src="/images/icons/pix.svg" 
                 alt="Pix" 
-                width={32} 
-                height={32} 
+                className="w-6 h-6 sm:w-8 sm:h-8"
               />
             </div>
-            <p className="text-center text-sm">Pix</p>
+            <p className="text-center text-xs sm:text-sm">Pix</p>
           </div>
 
           <div className="flex flex-col items-center text-white">
-            <div className="w-12 h-12 flex items-center justify-center mb-2">
-              <Image 
+            <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center mb-1 sm:mb-2">
+              <img 
                 src="/images/icons/barras.svg" 
                 alt="Calendário" 
-                width={32} 
-                height={32} 
+                className="w-6 h-6 sm:w-8 sm:h-8"
               />
             </div>
-            <p className="text-center text-sm">
+            <p className="text-center text-xs sm:text-sm">
               Pagamentos
               <br />
               de boletos
@@ -130,27 +126,20 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col items-center text-white">
-            <div className="w-12 h-12 flex items-center justify-center mb-2">
-              <Image 
+            <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center mb-1 sm:mb-2">
+              <img 
                 src="/images/icons/LogoPorto.svg" 
                 alt="Barras" 
-                width={32} 
-                height={32} 
+                className="w-6 h-6 sm:w-8 sm:h-8"
               />
             </div>
-            <p className="text-center text-sm">
+            <p className="text-center text-xs sm:text-sm">
               Gestão no
               <br />
               App Porto
             </p>
           </div>
         </div>
-      </div>
-      {/* CTA Text */}
-      <div className="max-w-3xl mx-auto px-4 text-center mb-8">
-        <p className="text-gray-800 text-lg">
-          Abra sua conta agora mesmo e comece a usar para viver o melhor da sua vida financeira com a Conta Porto Bank.
-        </p>
       </div>
 
       {/* CTA Buttons */}
@@ -191,7 +180,7 @@ export default function Home() {
           href="https://wa.me/message/XBYD42MCYPZ7M1"
           className="w-10 h-10 rounded-full border border-blue-400 flex items-center justify-center text-blue-400"
         >
-          <Phone className="w-5 h-5" />
+          <MessageCircle className="w-5 h-5" />
         </Link>
         <Link
           href="https://youtube.com/@especseguroseconsorcios?si=wNH6lnM6v6fmKDcj"
@@ -199,7 +188,15 @@ export default function Home() {
         >
           <Youtube className="w-5 h-5" />
         </Link>
-        
+
+        {/* Disclaimer */}
+        <div className="max-w-3xl mx-auto px-4 text-xs text-gray-500 mb-8">
+          <p className="mb-1">A abertura da conta está sujeita a aprovação.</p>
+          <p className="mb-1">
+            Cobertura limitada a R$ 1.000,00 para Pix e R$ 1.000,00 para compras indevidas, saque sob coação ou por perda
+            ou roubo do celular ou cartão. O valor do celular em caso de roubo, não será coberto.
+          </p>
+        </div>
         
       </div>
 
