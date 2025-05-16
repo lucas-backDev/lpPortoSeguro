@@ -45,7 +45,7 @@ export default function Home() {
             </div>
             <div className="w-2/5 flex justify-center">
               {/* Phone image positioned to appear partially outside the blue section */}
-              <div className="absolute -top-4 right-8 sm:right-10 md:right-12 lg:right-16 z-20">
+              <div className="absolute -top-4 right-8 sm:-top-6 sm:right-8 md:-top-8 md:right-6 lg:-top-10 lg:right-4 z-20">
                 <Image
                   src="/images/celularcortado.png"
                   alt="Celular com app"
